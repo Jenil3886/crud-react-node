@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { User, Mail, Cake, Phone } from "lucide-react";
 
 function AddUserForm({ saveUser, selectedUser, clearSelectedUser }) {
+    
 	const [user, setUser] = useState({ name: "", email: "", age: "", number: "" });
 
 	// Populate the form with the selected user's data when editing
